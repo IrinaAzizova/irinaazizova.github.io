@@ -1,0 +1,32 @@
+.header {
+    height: 80px;
+    background-color: rgba(237, 246, 255, 0.8);
+    box-shadow: 1px 1px 50px $lite-blue_color;
+    padding: 20px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: block;
+        max-width: 160px;
+    }
+    &__menu {
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+        &-item {            
+            margin-left: 60px;
+        }
+        &-link {
+            text-decoration: none;
+            color: $dark-blue_color;
+            &:hover {
+                color: $dark-blue_color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
