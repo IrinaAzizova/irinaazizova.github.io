@@ -1,0 +1,93 @@
+.intro {
+    min-height: 600px;
+    .container {
+        margin-top: 210px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__photo {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 109%;
+        letter-spacing: -0.5px;
+        color: $dark-blue_color;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__descr {
+        margin-top: 25px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.5px;
+    }
+    &__letter {
+        position: relative;
+        bottom: 2px;
+        margin-right: 16px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro {
+        &__title {
+            font-size: 55px;
+        }
+        &__descr {
+            font-size: 20px;
+        }
+        &__photo {
+            margin-right: 5%;
+            width: 260px;
+            height: 260px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .intro {
+        .container {
+            margin-top: 160px;
+        }
+        &__title {
+            font-size: 37px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+        &__photo {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        .container {
+            margin-top: 130px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__descr {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        &__photo {
+            width: 160px;
+            height: 160px;
+        }
+        &__letter {
+            bottom: 0px;
+            margin-right: 10px;
+            height: 13px;
+        }
+    }
+}

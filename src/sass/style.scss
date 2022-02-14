@@ -26,7 +26,9 @@
 }
 
 @media (max-width: 576px) {
-    .container {width: 100%px}
+    .container {width: 100%}
 }
 
 @import "blocks/header";
+@import "blocks/intro";
+@import "blocks/buttons";
