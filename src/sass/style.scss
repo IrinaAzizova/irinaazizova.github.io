@@ -5,8 +5,13 @@
 * {
     font-family: 'Manrope', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
+
+body {
+    background: url('../img/background.png');
+}
+
 
 .container {
     width: 1140px;
@@ -26,7 +31,7 @@
 }
 
 @media (max-width: 576px) {
-    .container {width: 100%}
+    .container {width: 85%}
 }
 
 @import "blocks/header";

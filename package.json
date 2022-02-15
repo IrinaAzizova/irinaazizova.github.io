@@ -8,7 +8,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.24.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.3.0",
@@ -23,14 +23,5 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IrinaAzizova/irinaazizova.github.io.git"
-  },
-  "bugs": {
-    "url": "https://github.com/IrinaAzizova/irinaazizova.github.io/issues"
-  },
-  "homepage": "https://github.com/IrinaAzizova/irinaazizova.github.io#readme",
-  "description": ""
+  ]
 }

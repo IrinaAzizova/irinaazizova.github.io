@@ -1,7 +1,7 @@
 .intro {
-    min-height: 600px;
-    .container {
-        margin-top: 210px;
+    min-height: 100vh;
+    padding-top: 210px;
+     .container {
         display: flex;
         justify-content: space-between;
     }
@@ -36,25 +36,25 @@
 
 @media (max-width: 1200px) {
     .intro {
+        padding-top: 170px;
         &__title {
-            font-size: 55px;
+            font-size: 50px;
         }
         &__descr {
             font-size: 20px;
         }
         &__photo {
             margin-right: 5%;
-            width: 260px;
-            height: 260px;
+            width: 300px;
+            height: 300px;
         }
     }
 }
 
 @media (max-width: 992px) {
     .intro {
-        .container {
-            margin-top: 160px;
-        }
+        padding-top: 160px;
+        min-height: 600px;
         &__title {
             font-size: 37px;
         }
@@ -62,17 +62,15 @@
             font-size: 15px;
         }
         &__photo {
-            width: 200px;
-            height: 200px;
+            width: 230px;
+            height: 230px;
         }
     }
 }
 
 @media (max-width: 768px) {
-    .intro {
-        .container {
-            margin-top: 130px;
-        }
+    .intro {        
+        padding-top: 130px;
         &__title {
             font-size: 30px;
         }
@@ -81,13 +79,40 @@
             margin-top: 20px;
         }
         &__photo {
-            width: 160px;
-            height: 160px;
+            width: 180px;
+            height: 180px;
+            margin-right: 2%;
         }
         &__letter {
             bottom: 0px;
             margin-right: 10px;
             height: 13px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .intro {
+        min-height: 100vh;
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__photo {
+            order: 1;
+            margin-right: 0;
+        }
+        &__wrapper {
+            order: 2;
+            text-align: center;
+        }
+        &__title {
+            font-size: 27px;
+            line-height: 111%;
+            margin-top: 60px;
+        }
+        &__descr {
+            font-size: 15px;
         }
     }
 }
