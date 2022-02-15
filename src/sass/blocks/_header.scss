@@ -7,6 +7,7 @@
     box-shadow: 0px -10px 20px $dark-blue_color;
     padding: 20px 0;
     .container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,6 +15,9 @@
     &__logo {
         display: block;
         max-width: 160px;
+        img {
+            width: 100%;
+        }
     }
     &__menu {
         ul {
@@ -32,7 +36,73 @@
             }
         }
     }
+    &__nav-btn {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 25%;
+        width: 30px;
+        height: 30px;
+        background-color: $dark-blue_color;
+        border-radius: 4px;
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        outline: none;
+        border: none;
+        z-index: 3;
+        &-line {
+            position: relative;
+            width: 15px;
+            border: 1px solid $grey_color;
+            background-color: $grey_color;
+            transition: all 0.5s;
+            &:first-of-type {
+                &.active {
+                    transform: rotate(45deg) translateY(-50%);
+                    top: 47%;
+                }
+            }
+            &:last-of-type {
+                &.active {
+                    transform: rotate(-45deg) translateY(50%);
+                    top: -47%;
+
+                }
+            }
+            &:nth-of-type(2) {
+                &.active {
+                    visibility: hidden;
+                }                
+            }
+        }
+    }
 }
+
+
+
+.first_btn_line_rotate {
+    border-bottom: var(--dark_brown) 2px solid;
+    width: 30px;
+    margin: auto;
+    transition: all 0.3s;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.third_btn_line_rotate {
+    border-bottom: var(--dark_brown) 2px solid;
+    width: 30px;
+    margin: auto;
+    transition: all 0.3s;
+    position: relative;
+    transform: rotate(-45deg);
+    bottom: 4px;
+}
+
+
 
 @media (max-width: 1200px) {
     .header {
@@ -49,6 +119,12 @@
         height: 60px;
         &__logo {
             max-width: 120px;
+        }
+        &__menu {
+            display: none;
+        }
+        &__nav-btn {
+            display: flex;
         }
     }
 }

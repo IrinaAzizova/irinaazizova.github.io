@@ -1,6 +1,6 @@
 .intro {
     min-height: 100vh;
-    padding-top: 210px;
+    padding: 210px 0 50px;
      .container {
         display: flex;
         justify-content: space-between;
@@ -26,8 +26,7 @@
         line-height: 150%;
         letter-spacing: -0.5px;
     }
-    &__letter {
-        position: relative;
+    svg {
         bottom: 2px;
         margin-right: 16px;
         height: 18px;
@@ -36,7 +35,7 @@
 
 @media (max-width: 1200px) {
     .intro {
-        padding-top: 170px;
+        padding-top: 160px;
         &__title {
             font-size: 50px;
         }
@@ -83,7 +82,7 @@
             height: 180px;
             margin-right: 2%;
         }
-        &__letter {
+        svg {
             bottom: 0px;
             margin-right: 10px;
             height: 13px;
