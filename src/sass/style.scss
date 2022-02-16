@@ -1,7 +1,8 @@
 @import "libs/bootstrap-reboot.min";
-@import "libs/variables";
 @import "libs/fonts";
 @import "libs/icon_fonts";
+@import "libs/variables";
+@import "libs/mixins";
 
 * {
     font-family: 'Manrope', sans-serif;
@@ -41,6 +42,9 @@ body {
 }
 
 @import "blocks/header";
+@import "blocks/titles";
 @import "blocks/intro";
 @import "blocks/buttons";
 @import "blocks/sidebar";
+@import "blocks/softskills";
+@import "blocks/devider";

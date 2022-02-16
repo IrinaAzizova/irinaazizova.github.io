@@ -14,8 +14,8 @@
     }
     &__logo {
         display: block;
-        max-width: 160px;
         img {
+            max-height: 50px;
             width: 100%;
         }
     }
@@ -31,8 +31,8 @@
             text-decoration: none;
             color: $dark-blue_color;
             &:hover {
+                border-bottom: 3px solid $orange_color;
                 color: $dark-blue_color;
-                text-decoration: underline;
             }
         }
     }
@@ -40,7 +40,7 @@
         display: none;
         position: absolute;
         right: 0;
-        top: 25%;
+        top: 0%;
         width: 30px;
         height: 30px;
         background-color: $dark-blue_color;
@@ -82,34 +82,14 @@
 }
 
 
-
-.first_btn_line_rotate {
-    border-bottom: var(--dark_brown) 2px solid;
-    width: 30px;
-    margin: auto;
-    transition: all 0.3s;
-    position: relative;
-    transform: rotate(45deg);
-}
-
-.third_btn_line_rotate {
-    border-bottom: var(--dark_brown) 2px solid;
-    width: 30px;
-    margin: auto;
-    transition: all 0.3s;
-    position: relative;
-    transform: rotate(-45deg);
-    bottom: 4px;
-}
-
-
-
 @media (max-width: 1200px) {
     .header {
         height: 70px;
-        padding: 10px 0;
+        padding: 18px 0;
         &__logo {
-            max-width: 140px;
+            img {
+                max-height: 30px;
+            }
         }
     }
 }
@@ -117,6 +97,7 @@
 @media (max-width: 768px) {
     .header {
         height: 60px;
+        padding: 15px 0;
         &__logo {
             max-width: 120px;
         }

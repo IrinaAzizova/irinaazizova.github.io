@@ -49,7 +49,8 @@
         &__menu-link {     
             &:hover {
                 color: $dark-blue_color;
-                text-shadow: none;
+                text-shadow: 3px 3px 10px $lite-blue_color,
+                            1px 1px $lite-blue_color;
             }
         }
     }
