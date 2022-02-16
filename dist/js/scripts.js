@@ -55,8 +55,9 @@ sidebarSocial.forEach( (i) => {
 	const url = link.getAttribute('href');
 	link.addEventListener('click', (e) => {
 		e.preventDefault();
-		sidebar.className = 'sidebar hidden';
+		btnSwitcher();
 		window.open(url, '_blank');
+		
 	});
 });
 
