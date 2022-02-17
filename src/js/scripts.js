@@ -1,5 +1,7 @@
 "use strict"
 
+console.log(document.location);
+
 const btnHeaderNav = document.querySelector('.header__nav-btn');
 const sidebar = document.querySelector('#sidebar');
 const sidebarSocial = document.querySelectorAll('.sidebar__social');
@@ -40,6 +42,7 @@ function btnSwitcher() {
 
 /* __________hBtn in header________ */
 btnHeaderNav.addEventListener('click', () => {
+	document.location.replace('relocation.index.html');
 	btnSwitcher();
 });
 
